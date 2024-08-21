@@ -1,0 +1,44 @@
+{
+  "request": {
+    "movements": [
+      {
+        "id": 1,
+        "date": "2024-01-05T10:00:00.0Z",
+        "wording": "Wording",
+        "amount": 10
+      },
+      {
+        "id": 2,
+        "date": "2024-02-05T10:00:00.0Z",
+        "wording": "Wording",
+        "amount": 20
+      },
+      {
+        "id": 3,
+        "date": "2024-03-05T10:00:00.0Z",
+        "wording": "Wording",
+        "amount": 30
+      }
+    ],
+    "balances": [
+      {
+        "date": "2024-01-01T10:00:00.0Z",
+        "balance": 100
+      },
+      {
+        "date": "2024-02-01T10:00:00.0Z",
+        "balance": 110
+      },
+      {
+        "date": "2024-03-01T10:00:00.0Z",
+        "balance": 130
+      },
+      {
+        "date": "2024-04-01T10:00:00.0Z",
+        "balance": 160
+      }
+    ]
+  },
+  "response": { "message": "accepted" },
+  "status": 202
+}

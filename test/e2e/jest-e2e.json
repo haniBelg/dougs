@@ -1,0 +1,28 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/jest.e2e.setup.ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@banking/model/(.*)": "<rootDir>/../libs/model/src/$1",
+    "@banking/model": "<rootDir>/../libs/model/src",
+    "@banking/no-duplicate-movement/(.*)": "<rootDir>/../libs/no-duplicate-movement/src/$1",
+    "@banking/no-duplicate-movement": "<rootDir>/../libs/no-duplicate-movement/src",
+    "@banking/no-failed-balance/(.*)": "<rootDir>/../libs/no-failed-balance/src/$1",
+    "@banking/no-failed-balance": "<rootDir>/../libs/no-failed-balance/src",
+    "@banking/no-uncontrolled-movement/(.*)": "<rootDir>/../libs/no-uncontrolled-movement/src/$1",
+    "@banking/no-uncontrolled-movement": "<rootDir>/../libs/no-uncontrolled-movement/src",
+    "@banking/chunk-generator/(.*)": "<rootDir>/../libs/chunk-generator/src/$1",
+    "@banking/chunk-generator": "<rootDir>/../libs/chunk-generator/src"
+  }
+}

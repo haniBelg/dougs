@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "model": {
+      "type": "library",
+      "root": "libs/model",
+      "entryFile": "index",
+      "sourceRoot": "libs/model/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/model/tsconfig.lib.json"
+      }
+    },
+    "movements-validation-services": {
+      "type": "library",
+      "root": "libs/movements-validation-services",
+      "entryFile": "index",
+      "sourceRoot": "libs/movements-validation-services/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/movements-validation-services/tsconfig.lib.json"
+      }
+    },
+    "movements-validator": {
+      "type": "library",
+      "root": "libs/movements-validator",
+      "entryFile": "index",
+      "sourceRoot": "libs/movements-validator/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/movements-validator/tsconfig.lib.json"
+      }
+    }
+  }
+}
